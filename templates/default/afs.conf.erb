@@ -1,0 +1,6 @@
+test -f /etc/openafs/afs.conf.client && . /etc/openafs/afs.conf.client
+
+VERBOSE=<%= node['openafs']['verbose'] %>
+OPTIONS=<%= node['openafs']['options'] %>
+AFS_POST_INIT=<%= node['openafs']['afs_post_init'] %>
+AFS_PRE_SHUTDOWN=<%= node['openafs']['afs_pre_shutdown'] %>

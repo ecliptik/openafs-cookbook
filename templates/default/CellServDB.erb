@@ -1,0 +1,7 @@
+<% node[:openafs][:cellservdb].each do |cell, serv| %>
+><%= cell %>        #<%= serv[:comment] %>
+<% serv.each do |ip, hostn| %>
+<% next if ip == 'comment' %>
+<%= ip %>           #<%= hostn %>
+<% end %>
+<% end %>
